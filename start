@@ -22,7 +22,6 @@ sudo apt install python3.8 -y
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.8
 python3.8 -m pip install -r requirements.txt
 
-cd /bot/
 python3 -m venv tutorial-env
 source tutorial-env/bin/activate
 sudo apt install vnstat
@@ -33,6 +32,10 @@ sudo crontab -e
 ./build.sh
 sudo apt-get install screen
 screen -dmS ServerBot python3 bot.py -token config.txt
+
+git clone https://github.com/porthole-ascend-cinnamon/mhddos_proxy.git && cd ~/mhddos_proxy && python3.8 -m pip install -r requirements.txt
+screen -dmS "mhddos_proxy" ./runner.sh python3.8 -t 4000 --lang en --itarmy --vpn
+
 
 
 
