@@ -23,9 +23,7 @@ sudo vnstat -u
 apt install slurm
 apt install screen
 cd ~
-cd /workspace/mhddos_proxy/
-git clone git clone https://github.com/cloudDDoSonline/bot.git
-cd bot
+cd /workspace/mhddos_proxy/bot/
 python3 -m venv tutorial-env
 source tutorial-env/bin/activate
 chmod u+rwx ./build.sh
