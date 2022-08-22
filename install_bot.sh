@@ -4,7 +4,7 @@ sudo vnstat -u
 apt install slurm
 apt install screen
 cd ~
-cd /workspace/mhddos_proxy/bot/
+cd /workspace/mhddos_proxy/
 python3 -m venv tutorial-env
 source tutorial-env/bin/activate
 python3 -m pip install -r requirements.txt
