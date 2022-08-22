@@ -8,15 +8,15 @@ sudo dpkg --configure -a
 cd ~
 cd /workspace/mhddos_proxy/
 sudo apt update
-sudo apt install python3.8-pip
+sudo apt install python3-pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3.8 get-pip.py
+python3 get-pip.py
 sudo apt update
-sudo apt install python3.8-pip
+sudo apt install python3-pip
 pip update python
 cd ~
 cd /workspace/mhddos_proxy/
-python3.8 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 sudo apt install vnstat
 sudo service vnstat start
 sudo vnstat -u
@@ -26,7 +26,7 @@ cd ~
 cd /workspace/mhddos_proxy/bot/
 python3 -m venv tutorial-env
 source tutorial-env/bin/activate
-python3.8 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 apt install slurm
 apt install screen
 screen -dmS bot python3 bot.py -token config.txt
