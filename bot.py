@@ -2,8 +2,8 @@ from subprocess import check_output
 import telebot, time
 import sys
 from telebot import types
-token = ''
-user_id = 0
+token = '5514596781:AAEX7vvmAlQ5_Fnc76_Od0A3O-JD1rywj0Q'
+user_id = 5301938332
 if sys.argv[1] == '-token' and len(sys.argv) > 2:
     with open(sys.argv[2]) as token_file:
         config_lines = token_file.readlines()
